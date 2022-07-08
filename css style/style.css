@@ -6,9 +6,11 @@
 
 :root {
     --mainDark: #2e2828;
-    --mainBrown: #503a3a;
-    --mainRed: #f65151;
+    --mainBackground: linear-gradient(to right, #DECBA4, #3E5151);
+    --mainRed: #8d6a6a;
     --mainWhite: #fef4f4;
+    --error: rgb(255, 0, 0);
+    --success: rgb(0, 255, 0); 
 }
 
 .container {
@@ -17,46 +19,64 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--mainBrown);
+    background: var(--mainBackground); 
 }
-
 .form {
-    height: 50vh;
-    width: 50vw;
+    height: 60vh;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: var(--mainRed);
-    
-    border: 1px solid black;
+    border-radius: 10px;
 }
-
 .header {
-    background-color: var(--mainDark);
     color: var(--mainWhite);
     padding: 20px;
 }
-
 .form-control {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
 }
-
 .form-control label {
-    font-weight: 800;
+    text-align: center;
+}
+.form-control input {
+    border: 1px solid var(--mainRed);
+    border-radius: 5px; 
+    padding: 5px;
+    outline: none;
+}
+#message {
+    padding: 10px 5px 30px 5px;
 }
 
 .form-control small {
     visibility: hidden;
 }
-
 .form-control.succes small {
     visibility: visible;
 }
-
 .form-control.error small {
     visibility: visible;
+    color: var(--error);
+}
+
+.btn {
+    color: #ccc;
+    font-weight: 800;
+    background: var(--mainDark);
+    padding: 5px 10px;
+    border: 1px solid var(--mainRed);
+    border-radius: 7.5px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    color: var(--mainDark);
+    background: #ccc;
+    cursor: pointer;
 }
 

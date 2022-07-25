@@ -1,4 +1,4 @@
 # SimpleNewbieFormValidation
-https://simplenewbieformvalidator.netlify.app/
+ - https://simplenewbieformvalidator.netlify.app/
 
-Simple Form Validation Form with Vanilla JS
+ - Simple Form Validation Form with Vanilla JS
